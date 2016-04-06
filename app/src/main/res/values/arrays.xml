@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="place_choice">
+        <item>校二饭门口</item>
+        <item>天桥底</item>
+        <item>A1门口</item>
+    </string-array>
+</resources>

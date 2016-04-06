@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:indicators="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/loginbackground"
+        android:orientation="vertical"
+        tools:context="com.cn.ciao.taoshubar.ApplicationMainFace">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/titlebarcolor">
+
+            <Button
+                android:id="@+id/topic_button"
+                style="@style/TextAppearance.AppCompat.Menu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/titlebarcolor"
+                android:text="淘书吧" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/puggy" />
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/application_main_face"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="18"></android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <com.cn.ciao.taoshubar.ChangeColorIndicatorView
+                android:id="@+id/indicator1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                indicators:indicatoricon="@mipmap/mall"
+                indicators:indicatortext="Mall" />
+
+            <com.cn.ciao.taoshubar.ChangeColorIndicatorView
+                android:id="@+id/indicator2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                indicators:indicatoricon="@mipmap/buy"
+                indicators:indicatortext="YBuy" />
+
+            <com.cn.ciao.taoshubar.ChangeColorIndicatorView
+                android:id="@+id/indicator3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                indicators:indicatoricon="@mipmap/sell"
+                indicators:indicatortext="YSell" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:background="@drawable/slice_menu_background">
+
+        <ImageView
+            android:id="@+id/slice_upper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/slice_up_white"
+            android:layerType="software"/>
+
+        <ExpandableListView
+            android:id="@+id/trace_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           ></ExpandableListView>
+
+
+
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="退出" />
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
+
+

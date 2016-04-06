@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TaoShuBar</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="mall_for_books">我要找书</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name ="mall_fragment_guidance">以下是您可能用到的书！</string>
+    <string name ="buy_fragment_guidance">以下是您的购买列表项</string>
+    <string name ="sell_fragment_guidance">以下是您的出售预约项</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="sell_button_in_fragment">我要卖书</string>
+    <string name="refresh_button_in_fragment">刷新购置列表</string>
+    <string name="date">请选择日期</string>
+    <string name="time">请选择时间</string>
+</resources>

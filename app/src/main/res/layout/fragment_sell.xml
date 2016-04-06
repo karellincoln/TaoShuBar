@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cn.ciao.taoshubar.SellFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        style="@style/TextAppearance.AppCompat.Menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/three_main_fragment"
+        android:gravity="center"
+        android:text="@string/sell_fragment_guidance" />
+
+    <LinearLayout
+        android:id="@+id/item_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:orientation="vertical"
+        android:weightSum="4">
+        <ListView
+            android:id="@+id/sell_fragmen_table"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:divider="@android:drawable/divider_horizontal_bright">
+        </ListView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sell_button_in_fragment_sell"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:background="@color/color_in_button"
+        android:text="@string/sell_button_in_fragment"/>
+</LinearLayout>

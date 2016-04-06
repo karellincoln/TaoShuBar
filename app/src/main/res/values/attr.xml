@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ChangeColorIndicatorView">
+        <attr name="indicatoricon" format="reference"/>
+        <attr name="indicatortext" format="string"/>
+    </declare-styleable>
+</resources>

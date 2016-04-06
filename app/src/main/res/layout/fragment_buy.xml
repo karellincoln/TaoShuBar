@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cn.ciao.taoshubar.BuyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/three_main_fragment"
+        style="@style/TextAppearance.AppCompat.Menu"
+        android:gravity="center"
+        android:text="@string/buy_fragment_guidance" />
+    <LinearLayout
+        android:id="@+id/sell_books_board"
+        android:layout_weight="12"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4"
+        android:layout_height="0dp">
+        <ListView
+            android:id="@+id/buy_fragmen_table"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:divider="@android:drawable/divider_horizontal_bright">
+        </ListView>
+    </LinearLayout>
+    <Button android:id="@+id/refresh_button_in_fragment_buy"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:background="@color/color_in_button"
+        android:text="@string/refresh_button_in_fragment"/>
+</LinearLayout>
